@@ -27,7 +27,7 @@ int main() {
     */
 
     Solution solution;
-
+    cout << "Remove Element" << endl;
     vector<int> nums1 = { 3, 2, 2, 3 };
     vector<int> nums2 = { 0, 1, 2, 2, 3, 0, 4, 2 };
     vector<int> nums3 = { 1, 2, 3, 4 };
@@ -39,4 +39,14 @@ int main() {
     removeElement(solution, nums3, 5);
     removeElement(solution, nums4, 2);
     removeElement(solution, nums5, 1);
+
+    /* 136. Single number
+    ※ difficulty: easy
+    ※ describtion: Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+                    You must implement a solution with a linear runtime complexity and use only constant extra space.
+    ※ learning objective: Using XOR to efficiently find once-only numbers.
+    */
+    cout << "Single number"<<endl;
+    vector<int> nums6 = { 2, 1, 3, 3, 2 };
+    cout << solution.singleNumber(nums6);
 }

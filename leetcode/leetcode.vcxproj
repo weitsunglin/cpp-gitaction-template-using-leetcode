@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="removeElement.cpp" />
+    <ClCompile Include="SingleNumber.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solution.h" />

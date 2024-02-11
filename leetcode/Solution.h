@@ -3,9 +3,12 @@
 
 #include <vector>
 
+using namespace std;
+
 class Solution {
 public:
-    int removeElement(std::vector<int>& nums, int val);
+    int removeElement(vector<int>& nums, int val);
+    int singleNumber(vector<int>& nums);
 };
 
 #endif
