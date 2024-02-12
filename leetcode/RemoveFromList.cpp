@@ -22,6 +22,5 @@ ListNode* Solution::removeFromList(ListNode* head, int val) {
             current = current->next;
         }
     }
-
     return head;
 }

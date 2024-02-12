@@ -62,7 +62,7 @@ int main() {
     ※ difficulty: easy
     ※ describtion: Given the head of a linked list and an integer val, 
                     remove all the nodes of the linked list that has Node.val == val, and return the new head.
-    ※ learning objective: 
+    ※ learning objective: Learn to delete nodes, headers & remaining elements of a linked string column in batches.
     */
 
     // 1 -> 2 -> 6 -> 3 -> 4 -> 5 -> 6
