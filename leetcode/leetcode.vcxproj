@@ -128,7 +128,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="removeElement.cpp" />
+    <ClCompile Include="RemoveFromArray.cpp" />
+    <ClCompile Include="RemoveFromList.cpp" />
     <ClCompile Include="SingleNumber.cpp" />
   </ItemGroup>
   <ItemGroup>

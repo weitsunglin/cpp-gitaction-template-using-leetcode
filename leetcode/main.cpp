@@ -4,13 +4,22 @@
 
 using namespace std;
 
-void removeElement(Solution& solution, vector<int>& nums, int val) {
-    int k = solution.removeElement(nums, val);
+void removeFromArray(Solution& solution, vector<int>& nums, int val) {
+    int k = solution.removeFromArray(nums, val);
     cout << "After removal, size = " << k << ", nums = [";
     for (int i = 0; i < k; ++i) {
         cout << nums[i] << (i < k - 1 ? ", " : "");
     }
     cout << "]" << endl;
+}
+
+void printList(ListNode* head) {
+    ListNode* current = head;
+    while (current != nullptr) {
+        std::cout << current->val << " ";
+        current = current->next;
+    }
+    std::cout << std::endl;
 }
 
 int main() {
@@ -33,11 +42,11 @@ int main() {
     vector<int> nums4 = { 2, 2, 2, 2 };
     vector<int> nums5 = {};
 
-    removeElement(solution, nums1, 3);
-    removeElement(solution, nums2, 2);
-    removeElement(solution, nums3, 5);
-    removeElement(solution, nums4, 2);
-    removeElement(solution, nums5, 1);
+    removeFromArray(solution, nums1, 3);
+    removeFromArray(solution, nums2, 2);
+    removeFromArray(solution, nums3, 5);
+    removeFromArray(solution, nums4, 2);
+    removeFromArray(solution, nums5, 1);
 
     /* 136. Single number
     ※ difficulty: easy
@@ -48,4 +57,29 @@ int main() {
     cout << "Single number"<<endl;
     vector<int> nums6 = { 2, 1, 3, 3, 2 };
     cout << solution.singleNumber(nums6);
+
+    /* 203. Remove Linked List Elements
+    ※ difficulty: easy
+    ※ describtion: Given the head of a linked list and an integer val, 
+                    remove all the nodes of the linked list that has Node.val == val, and return the new head.
+    ※ learning objective: 
+    */
+
+    // 1 -> 2 -> 6 -> 3 -> 4 -> 5 -> 6
+    ListNode* head = new ListNode(1, new ListNode(2, new ListNode(6, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6)))))));
+
+    std::cout << "Original List: ";
+    printList(head);
+
+    Solution solution;
+    head = solution.removeFromList(head, 6);
+
+    std::cout << "Modified List: ";
+    printList(head);
+
+    while (head != nullptr) {
+        ListNode* temp = head;
+        head = head->next;
+        delete temp;
+    }
 }

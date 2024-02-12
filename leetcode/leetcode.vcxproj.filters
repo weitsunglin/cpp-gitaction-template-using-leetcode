@@ -18,10 +18,13 @@
     <ClCompile Include="main.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
-    <ClCompile Include="removeElement.cpp">
+    <ClCompile Include="RemoveFromArray.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
     <ClCompile Include="SingleNumber.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveFromList.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
   </ItemGroup>
