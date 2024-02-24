@@ -1,5 +1,6 @@
 ﻿  main.cpp
-  removeElement.cpp
+  RemoveFromArray.cpp
+  RemoveFromList.cpp
   SingleNumber.cpp
   正在產生程式碼...
-  leetcode.vcxproj -> C:\Users\User\Desktop\project\leetcode\x64\Debug\leetcode.exe
+  leetcode.vcxproj -> F:\_project\leetcode\x64\Debug\leetcode.exe

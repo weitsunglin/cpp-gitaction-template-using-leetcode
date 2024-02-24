@@ -71,7 +71,6 @@ int main() {
     std::cout << "Original List: ";
     printList(head);
 
-    Solution solution;
     head = solution.removeFromList(head, 6);
 
     std::cout << "Modified List: ";
