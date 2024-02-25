@@ -27,3 +27,5 @@ To remove duplicates from a sorted array and return the new length of the array 
 - **Return `k`**: The value of `k` after the last unique element has been placed will be the length of the array containing only unique elements. This value is returned as the result.
 
 This method modifies the array in place to contain only unique elements and returns the length of this modified array, utilizing only a single array for the operation.
+
+© 2024 weitusnglin(Taiwan Little Seal). All rights reserved.
