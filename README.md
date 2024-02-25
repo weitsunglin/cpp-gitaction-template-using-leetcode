@@ -1,5 +1,5 @@
-27. Remove Element - easy
-136. Single number - easy
-203. Remove Linked List Elements - easy
-26. Remove Duplicates SortedArray  - easy
+27. Remove Element
+136. Single number
+203. Remove Linked List Elements
+26. Remove Duplicates SortedArray
 
