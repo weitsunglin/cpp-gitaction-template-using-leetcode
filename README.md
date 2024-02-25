@@ -1,5 +1,14 @@
 # Algorithm Explanations
 
+To remove a specified element from an array, follow these steps:
+
+1. **Point to the Non-Specified Element**: Use a variable to point to the next non-specified element in the array. This variable will help identify which elements should be kept.
+
+2. **Reassign the Array Value**: Move the non-specified elements forward in the array, overwriting the position of the specified elements that need to be removed. This effectively compacts the array, keeping only the elements that are not specified for removal.
+
+3. **Return the Length**: Finally, return the length of the array that contains the non-specified elements. It's important to note that the elements beyond this new length are considered "dirty" or irrelevant, as they may contain remnants of the original array. Therefore, the length of the non-specified elements is returned to ensure that only the relevant portion of the array is used, given that there is only one array in use.
+
+
 ## 27. Remove Element
 
 ## 136. Single Number
