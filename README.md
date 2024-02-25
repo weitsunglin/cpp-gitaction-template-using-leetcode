@@ -5,7 +5,19 @@
 ## 136. Single Number
 
 ## 203. Remove Linked List Elements
+The process of removing an element from an associative list is divided into two phases.
 
+- **Stage 1: Removing the First Element**:
+  - Determine target: Specify the element to be removed using the temp pointer temp tag.
+  - Reassign header: Adjust the list header to point to the next element, effectively skipping the element to be removed.
+  - Deletion Process: Releases or deletes the element pointed to by temp, removing it from the list.
+
+  - **Stage 2: Deleting subsequent elements**:
+  - Finding the next target: Now, focus on the element following the head element. Since the head element has already been processed in the first stage, it is not a target for deletion.
+  -  Deletion Procedure: Using the same deletion strategy as in Phase 1, use a temporary pointer temp for the element to be deleted, and then point the next of the current element to the next of the deleted element.
+ 
+Both stage verify that the pointer is null before deletion to ensure the security of the operation.
+  
 ## 26. Remove Duplicates from Sorted Array
 
 To remove duplicates from a sorted array and return the new length of the array without duplicates, we use the following approach:
