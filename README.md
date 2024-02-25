@@ -3,6 +3,7 @@
 ## 27. Remove Element
 
 ## 136. Single Number
+Using XOR to efficiently find once-only numbers, because A⊕0=A & A⊕A=0
 
 ## 203. Remove Linked List Elements
 The process of removing an element from an associative list is divided into two phases.
