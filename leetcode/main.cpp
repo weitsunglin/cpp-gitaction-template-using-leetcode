@@ -6,15 +6,6 @@
 
 using namespace std;
 
-/* 27. Remove Element
-    ※ difficulty: easy
-    ※ describtion: Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. 
-                    The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.
-                    Consider the number of elements in nums which are not equal to val be k, to get accepted, you need to do the following things:
-                    Change the array nums such that the first k elements of nums contain the elements which are not equal to val. 
-                    The remaining elements of nums are not important as well as the size of nums.
-    ※ learning objective: Effectively use existing space to remove elements.
-*/
 
 void testRemoveElement() {
     Solution solution;
@@ -39,12 +30,6 @@ void testRemoveElement() {
     }
 }
 
-/* 136. Single number
-    ※ difficulty: easy
-    ※ describtion: Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
-                    You must implement a solution with a linear runtime complexity and use only constant extra space.
-    ※ learning objective: Using XOR to efficiently find once-only numbers, because A⊕0=A & A⊕A=0.
-*/
 
 void testSingleNumber() {
     Solution solution;
@@ -52,13 +37,6 @@ void testSingleNumber() {
     cout << solution.singleNumber(nums6) << endl;
 }
 
-
-/* 203. Remove Linked List Elements
-    ※ difficulty: easy
-    ※ describtion: Given the head of a linked list and an integer val, 
-                    remove all the nodes of the linked list that has Node.val == val, and return the new head.
-    ※ learning objective: Learn to delete nodes, headers & remaining elements of a linked string column in batches.
-*/
 
 void testRemoveLinkedListElement() {
     Solution solution;
@@ -84,13 +62,6 @@ void testRemoveLinkedListElement() {
     }
 }
 
-/* 26. Remove Duplicates from Sorted Array
-    ※ difficulty: easy
-    ※ describtion: Given an integer array nums sorted in non-decreasing order, 
-    remove the duplicates in-place such that each unique element appears only once. 
-    The relative order of the elements should be kept the same. Then return the number of unique elements in nums.
-    ※ learning objective: 
-*/
 
 void testRemoveDuplicatesSortedArray() {
     Solution solution;
