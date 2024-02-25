@@ -127,12 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CommonFunction.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="RemoveFromArray.cpp" />
-    <ClCompile Include="RemoveFromList.cpp" />
+    <ClCompile Include="RemoveDuplicatesSortedArray.cpp" />
+    <ClCompile Include="RemovElement.cpp" />
+    <ClCompile Include="RemoveLinkedListElement.cpp" />
     <ClCompile Include="SingleNumber.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CommonFunction.h" />
+    <ClInclude Include="Define.h" />
     <ClInclude Include="Solution.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

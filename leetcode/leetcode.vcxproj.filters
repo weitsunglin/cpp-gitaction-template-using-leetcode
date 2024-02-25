@@ -18,18 +18,30 @@
     <ClCompile Include="main.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
-    <ClCompile Include="RemoveFromArray.cpp">
+    <ClCompile Include="RemoveDuplicatesSortedArray.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="RemovElement.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveLinkedListElement.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
     <ClCompile Include="SingleNumber.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
-    <ClCompile Include="RemoveFromList.cpp">
+    <ClCompile Include="CommonFunction.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solution.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonFunction.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
   </ItemGroup>
