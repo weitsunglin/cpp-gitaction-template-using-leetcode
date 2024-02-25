@@ -40,4 +40,4 @@ To remove duplicates from a sorted array and return the new length of the array 
 
 This method modifies the array in place to contain only unique elements and returns the length of this modified array, utilizing only a single array for the operation.
 
-© 2024 weitusnglin(Taiwan Little Seal). All rights reserved.
+© 2024 weitusnglin. All rights reserved.
