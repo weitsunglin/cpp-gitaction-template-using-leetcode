@@ -1,12 +1,10 @@
 ﻿#include <iostream>
 #include <vector>
-#include <cassert>
 
 #include "Solution.h"
 #include "CommonFunction.h"
 
 using namespace std;
-
 
 void testRemoveElement() {
     vector<int> testCase = { 3, 2, 2, 3 };
@@ -19,20 +17,17 @@ void testRemoveElement() {
     commonfunction.printIntVector(testCase);
 }
 
-
 void testSingleNumber() {
     Solution solution;
     vector<int> nums6 = {2, 1, 3, 3, 2};
     cout << solution.singleNumber(nums6) << endl;
 }
 
-
 void testRemoveLinkedListElement() {
     Solution solution;
 
     // 1 → 2 → 6 → 3 → 4 → 5 → 6 → nullptr
     ListNode* head = new ListNode(1, new ListNode(2, new ListNode(6, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6)))))));
-
 
     cout << "Original List: "<<endl;
     CommonFunction commonfunction;
@@ -50,7 +45,6 @@ void testRemoveLinkedListElement() {
         delete temp;
     }
 }
-
 
 void testRemoveDuplicatesSortedArray() {
     Solution solution;
@@ -72,7 +66,6 @@ void testReverseString() {
     CommonFunction commonfunction;
     commonfunction.printCharVector(s2);
 }
-
 
 int main() {
     /*cout << "testRemoveElement" << endl;

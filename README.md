@@ -51,4 +51,10 @@ To remove duplicates from a sorted array and return the new length of the array 
 
 This method modifies the array in place to contain only unique elements and returns the length of this modified array, utilizing only a single array for the operation.
 
+## 344. Reverse String 
+
+Write a function that takes a string as input and returns the string reversed
+
+Use two pointers, one from the front, one from the back and one from the center, and exchange them two by two.
+
 © 2024 weitusnglin. All rights reserved.
