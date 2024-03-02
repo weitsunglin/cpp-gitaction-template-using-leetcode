@@ -11,6 +11,7 @@ To remove a specified element from an array, follow these steps:
 3. **Return the Length**: Finally, return the length of the array that contains the non-specified elements. It's important to note that the elements beyond this new length are considered "dirty" or irrelevant, as they may contain remnants of the original array. Therefore, the length of the non-specified elements is returned to ensure that only the relevant portion of the array is used, given that there is only one array in use.
 
 ## 136. Single Number
+Given a non-empty array of integers nums , every element appears twice except for one. Find that single one
 Using XOR to efficiently find once-only numbers, because A⊕0=A & A⊕A=0
 
 ## 203. Remove Linked List Elements
