@@ -7,6 +7,8 @@
 class CommonFunction {
 public:
     void printLinkedList(ListNode* head);
+    void printCharVector(std::vector<char>& v);
+    void printIntVector(std::vector<int>& v);
 };
 
 #endif

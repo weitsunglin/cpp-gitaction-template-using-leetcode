@@ -13,3 +13,17 @@ void CommonFunction::printLinkedList(ListNode* head) {
     }
     cout << endl;
 }
+
+void CommonFunction::printCharVector( vector<char>& v) {
+    for (char c : v) {
+        cout << c << " ";
+    }
+    cout << endl;
+}
+
+void CommonFunction::printIntVector(vector<int>& v) {
+    for (int i : v) {
+        cout << i << " ";
+    }
+    cout << endl;
+}

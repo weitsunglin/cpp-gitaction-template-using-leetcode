@@ -132,6 +132,7 @@
     <ClCompile Include="RemoveDuplicatesSortedArray.cpp" />
     <ClCompile Include="RemovElement.cpp" />
     <ClCompile Include="RemoveLinkedListElement.cpp" />
+    <ClCompile Include="ReverseString.cpp" />
     <ClCompile Include="SingleNumber.cpp" />
   </ItemGroup>
   <ItemGroup>

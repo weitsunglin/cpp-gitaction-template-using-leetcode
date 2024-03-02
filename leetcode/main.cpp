@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <vector>
+#include <cassert>
 
 #include "Solution.h"
 #include "CommonFunction.h"
@@ -8,26 +9,14 @@ using namespace std;
 
 
 void testRemoveElement() {
+    vector<int> testCase = { 3, 2, 2, 3 };
+    int val = 3; // 要移除的元素值
+
     Solution solution;
-    
-    vector<vector<int>> testCases = {
-        {3, 2, 2, 3},
-        {0, 1, 2, 2, 3, 0, 4, 2},
-        {1, 2, 3, 4},
-        {2, 2, 2, 2},
-        {}
-    };
+    int k = solution.removElement(testCase, val);
 
-    vector<int> vals = {3, 2, 5, 2, 1};
-
-    for (int i = 0; i < testCases.size(); i++) {
-        int k = solution.removElement(testCases[i], vals[i]);
-        cout << "After removal, size = " << k << ", nums = [";
-        for (int j = 0; j < k; ++j) {
-            cout << testCases[i][j] << (j < k - 1 ? ", " : "");
-        }
-        cout << "]" << endl;
-    }
+    CommonFunction  commonfunction;
+    commonfunction.printIntVector(testCase);
 }
 
 
@@ -41,7 +30,7 @@ void testSingleNumber() {
 void testRemoveLinkedListElement() {
     Solution solution;
 
-    // Creating a linked list: 1 -> 2 -> 6 -> 3 -> 4 -> 5 -> 6
+    // 1 → 2 → 6 → 3 → 4 → 5 → 6 → nullptr
     ListNode* head = new ListNode(1, new ListNode(2, new ListNode(6, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6)))))));
 
 
@@ -67,25 +56,39 @@ void testRemoveDuplicatesSortedArray() {
     Solution solution;
     vector<int> nums = {1, 1, 2};
     int k = solution.removeDuplicatesSortedArray(nums);
-    cout << "After removal, size = " << k << ", nums = [";
-    for (int i = 0; i < k; ++i) {
-        cout << nums[i] << (i < k - 1 ? ", " : "");
-    }
-    cout << "]" << endl;
+    cout << "After removal, size = " << k << endl;
+
+    CommonFunction commonfunction;
+    commonfunction.printIntVector(nums);
+}
+
+void testReverseString() {
+    vector<char> s1 = { 'h', 'e', 'l', 'l', 'o' };
+    vector<char> s2 = { 'o', 'l', 'l', 'e', 'h' };
+
+    Solution solution;
+    solution.reverseString(s1);
+
+    CommonFunction commonfunction;
+    commonfunction.printCharVector(s2);
 }
 
 
 int main() {
-    cout << "testRemoveElement" << endl;
-    testRemoveElement();
+    /*cout << "testRemoveElement" << endl;
+    testRemoveElement();*/
 
-    cout << "testSingleNumber" << endl;
-    testSingleNumber();
+    /*cout << "testSingleNumber" << endl;
+    testSingleNumber();*/
 
-    cout << "testRemoveLinkedListElement" << endl;
-    testRemoveLinkedListElement();
+    /*cout << "testRemoveLinkedListElement" << endl;
+    testRemoveLinkedListElement(); */
 
-    cout << "testRemoveDuplicatesSortedArray" << endl;
-    testRemoveDuplicatesSortedArray();
+    /*cout << "testRemoveDuplicatesSortedArray" << endl;
+    testRemoveDuplicatesSortedArray();*/
+
+    cout << "testRevertString" << endl;
+    testReverseString();
+
     return 0;
 }

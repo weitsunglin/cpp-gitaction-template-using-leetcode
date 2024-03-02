@@ -11,6 +11,7 @@ class Solution {
         int singleNumber(vector<int>& nums);
         ListNode* removeLinkedListElement(ListNode* head, int val);
         int removeDuplicatesSortedArray(vector<int>& nums);
+        void reverseString(vector<char>& s);
 };
 
 #endif
