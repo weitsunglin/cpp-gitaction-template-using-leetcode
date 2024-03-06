@@ -27,6 +27,7 @@ jobs:
           }
           
     - name: Run Executable
+      run: |
         if ($env:BUILD_TYPE -eq "Debug") {
           ./leetcode_build_debug.exe
         } else {
