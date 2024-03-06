@@ -16,9 +16,9 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1.0.2
     
-    - name: Compile with MSVC  # 编译命令
-      run: |
-        cl /EHsc /Fe:leetcode_build.exe leetcode\main.cpp leetcode\CommonFunction.cpp leetcode\RemovElement.cpp leetcode\RemoveDuplicatesSortedArray.cpp leetcode\RemoveLinkedListElement.cpp leetcode\ReverseString.cpp leetcode\SingleNumber.cpp
+    - name: Compile with MSVC
+      run: cmd /c "cl /EHsc /Fe:leetcode_build.exe leetcode\main.cpp leetcode\CommonFunction.cpp leetcode\RemovElement.cpp leetcode\RemoveDuplicatesSortedArray.cpp leetcode\RemoveLinkedListElement.cpp leetcode\ReverseString.cpp leetcode\SingleNumber.cpp"
+      shell: cmd
     
     - name: Upload executable as artifact
       uses: actions/upload-artifact@v2
