@@ -21,9 +21,9 @@ jobs:
         BUILD_TYPE: ${{  github.ref == 'refs/heads/main' && 'Release' || 'Debug' }}
       run: |
           if ($env:BUILD_TYPE -eq "Debug") {
-            cl /EHsc /Zi /Fe:leetcode_build_debug.exe leetcode\main.cpp leetcode\CommonFunction.cpp leetcode\RemovElement.cpp leetcode\RemoveDuplicatesSortedArray.cpp leetcode\RemoveLinkedListElement.cpp leetcode\ReverseString.cpp leetcode\SingleNumber.cpp
+            cl /EHsc /Zi /Fe:leetcode_build_debug.exe main.cpp CommonFunction.cpp RemovElement.cpp RemoveDuplicatesSortedArray.cpp RemoveLinkedListElement.cpp ReverseString.cpp SingleNumber.cpp
           } else {
-            cl /EHsc /O2 /DNDEBUG /Fe:leetcode_build_release.exe leetcode\main.cpp leetcode\CommonFunction.cpp leetcode\RemovElement.cpp leetcode\RemoveDuplicatesSortedArray.cpp leetcode\RemoveLinkedListElement.cpp leetcode\ReverseString.cpp leetcode\SingleNumber.cpp
+            cl /EHsc /O2 /DNDEBUG /Fe:leetcode_build_release.exe main.cpp CommonFunction.cpp RemovElement.cpp RemoveDuplicatesSortedArray.cpp RemoveLinkedListElement.cpp ReverseString.cpp SingleNumber.cpp
           }
           
     - name: Run Executable

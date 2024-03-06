@@ -36,4 +36,5 @@ Requirement: Write a function that takes a string as input and returns the strin
 
 Solution:　Use two indexes, one at the front and one at the back, both going to the center and exchanging with each other as they go.
 
+
 © 2024 weitusnglin. All rights reserved.
