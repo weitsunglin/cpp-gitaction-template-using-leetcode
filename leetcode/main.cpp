@@ -82,6 +82,6 @@ int main() {
 
     cout << "testRevertString" << endl;
     testReverseString();
-	system("pause");
+    system("pause");
     return 0;
 }
