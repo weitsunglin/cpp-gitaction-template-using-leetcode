@@ -1,43 +1,24 @@
-name: C++ CI  # 定義工作流名稱
+name: C++ CI  # 定义工作流名称
 
-on:  # 觸發條件
+on:  # 触发条件
   push:  # 推送事件
-    branches: [ main ]  # 僅對main分支生效
-  pull_request:  # 拉取請求事件
-    branches: [ main ]  # 僅對main分支生效
+    branches: [ main ]  # 仅对main分支生效
+  pull_request:  # 拉取请求事件
+    branches: [ main ]  # 仅对main分支生效
 
 jobs:
-  build:  # 工作名稱
-
-    runs-on: ubuntu-latest  # 運行環境
+  build:  # 工作名称
+    runs-on: windows-latest  # 运行环境
 
     steps:
-    - uses: actions/checkout@v2  # 檢出代碼
-    - name: Print basic system info  # 步驟名稱
-      run: |  # 執行命令
-        echo "Printing system info..."  # 打印系統信息
-        uname -a  # 顯示所有系統信息
-        echo "C++ compiler version:"  # 打印C++編譯器版本
-        g++ --version  # 獲取g++版本
-        echo "Current directory:"  # 打印當前目錄
-        pwd  # 顯示當前工作目錄的路徑
-        echo "Environment variables:"  # 打印環境變量
-        env  # 顯示所有環境變量
+    - uses: actions/checkout@v2  # 检出代码
     
-    - name: Install dependencies  # 步驟名稱
-      run: sudo apt-get update && sudo apt-get install -y g++  # 安裝依賴
+    - name: Compile with MSVC  # 编译命令
+      run: |
+        cl /EHsc /Fe:leetcode_build.exe leetcode\main.cpp leetcode\CommonFunction.cpp leetcode\RemovElement.cpp leetcode\RemoveDuplicatesSortedArray.cpp leetcode\RemoveLinkedListElement.cpp leetcode\ReverseString.cpp leetcode\SingleNumber.cpp
     
-    - name: Build  # 構建應用
-      run: |  # 執行構建命令
-        g++ -o leetcode_build leetcode/main.cpp leetcode/CommonFunction.cpp leetcode/RemovElement.cpp leetcode/RemoveDuplicatesSortedArray.cpp leetcode/RemoveLinkedListElement.cpp leetcode/ReverseString.cpp leetcode/SingleNumber.cpp
-    
-    - name: Run  # 運行應用
-      run: ./leetcode_build  # 執行構建出的程序
-
     - name: Upload executable as artifact
       uses: actions/upload-artifact@v2
       with:
           name: leetcode-build
-          path: leetcode_build
-
-      
+          path: leetcode_build.exe
