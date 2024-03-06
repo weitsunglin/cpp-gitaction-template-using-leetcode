@@ -23,11 +23,14 @@ jobs:
         pwd  # 顯示當前工作目錄的路徑
         echo "Environment variables:"  # 打印環境變量
         env  # 顯示所有環境變量
+    
     - name: Install dependencies  # 步驟名稱
       run: sudo apt-get update && sudo apt-get install -y g++  # 安裝依賴
+    
     - name: Build  # 構建應用
       run: |  # 執行構建命令
-        g++ -o leetcode_build leetcode/main.cpp leetcode/CommonFunction.cpp leetcode/RemovElement.cpp leetcode/RemoveDuplicatesSortedArray.cpp leetcode/RemoveLinkedListElement.cpp leetcode/ReverseString.cpp leetcode/SingleNumber.cpp  # 編譯命令，包括所有相關的.cpp文件
+        g++ -o leetcode_build.exe leetcode/main.cpp leetcode/CommonFunction.cpp leetcode/RemovElement.cpp leetcode/RemoveDuplicatesSortedArray.cpp leetcode/RemoveLinkedListElement.cpp leetcode/ReverseString.cpp leetcode/SingleNumber.cpp
+    
     - name: Run  # 運行應用
       run: ./leetcode_build  # 執行構建出的程序
 
@@ -35,6 +38,6 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
           name: leetcode-executable
-          path: leetcode_build
+          path: leetcode_build.exe
 
       
