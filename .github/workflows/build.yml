@@ -19,3 +19,9 @@ jobs:
     - name: Compile
       run: |
          cl /EHsc /O2 /DNDEBUG /Fe:leetcode_build.exe leetcode\main.cpp leetcode\CommonFunction.cpp leetcode\RemovElement.cpp leetcode\RemoveDuplicatesSortedArray.cpp leetcode\RemoveLinkedListElement.cpp leetcode\ReverseString.cpp leetcode\SingleNumber.cpp
+
+    - name: Upload executable as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: leetcode-executable
+        path: leetcode_build.exe
