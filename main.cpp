@@ -72,7 +72,7 @@ void testTwoSum() {
     int target = 9; // 要移除的元素值
 
     Solution solution;
-    vector<int> childs = solution.TwoSum(numbers, target);
+    vector<int> childs = solution.twoSum(numbers, target);
     
     CommonFunction  commonfunction;
     commonfunction.printIntVector(childs);
