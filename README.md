@@ -38,4 +38,10 @@ Solution:　Use two indexes, one at the front and one at the back, both going to
 
 ![black_seal](https://github.com/weitsunglin/leetcode/blob/main/black_seal.png)
 
+##  1. Two Sum
+
+Requirement: Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+Solution: 
+
 © 2024 weitusnglin. All rights reserved.
