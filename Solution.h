@@ -12,6 +12,7 @@ class Solution {
         ListNode* removeLinkedListElement(ListNode* head, int val);
         int removeDuplicatesSortedArray(vector<int>& nums);
         void reverseString(vector<char>& s);
+        vector<int> TwoSum(vector<int>& nums, int target);
 };
 
 #endif
