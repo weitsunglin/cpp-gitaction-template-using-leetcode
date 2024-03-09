@@ -36,12 +36,13 @@ Requirement: Write a function that takes a string as input and returns the strin
 
 Solution:　Use two indexes, one at the front and one at the back, both going to the center and exchanging with each other as they go.
 
-![black_seal](https://github.com/weitsunglin/leetcode/blob/main/black_seal.png)
-
 ##  1. Two Sum
 
 Requirement: Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
-Solution: 
+Solution: Use map to compare each element of the array to the target.
+
+![black_seal](https://github.com/weitsunglin/leetcode/blob/main/black_seal.png)
+
 
 © 2024 weitusnglin. All rights reserved.
