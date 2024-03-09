@@ -67,6 +67,18 @@ void testReverseString() {
     commonfunction.printCharVector(s2);
 }
 
+void testTwoSum() {
+    vector<int> numbers = { 2, 7, 11, 5 };
+    int target = 9; // 要移除的元素值
+
+    Solution solution;
+    vector<int> childs = solution.TwoSum(numbers, target);
+    
+    CommonFunction  commonfunction;
+    commonfunction.printIntVector(childs);
+}
+
+
 int main() {
     /*cout << "testRemoveElement" << endl;
     testRemoveElement();*/
@@ -80,8 +92,12 @@ int main() {
     /*cout << "testRemoveDuplicatesSortedArray" << endl;
     testRemoveDuplicatesSortedArray();*/
 
-    cout << "testRevertString" << endl;
-    testReverseString();
+   /*cout << "testRevertString" << endl;
+    testReverseString();*/
+
+    cout << "testTwoSum" << endl;
+    testTwoSum();
+    
     system("pause");
     return 0;
 }
