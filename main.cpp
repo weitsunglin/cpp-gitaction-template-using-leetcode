@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 #include <vector>
-
+#include <string>
 #include "Solution.h"
 #include "CommonFunction.h"
 
@@ -79,6 +79,15 @@ void testTwoSum() {
 }
 
 
+void testValidParentheses() {
+    string testCase = "()[]{}";
+
+    Solution solution;
+    bool result = solution.removElement(testCase);
+
+    cout << "testValidParentheses" << result << endl;
+}
+
 int main() {
     /*cout << "testRemoveElement" << endl;
     testRemoveElement();*/
@@ -95,8 +104,11 @@ int main() {
    /*cout << "testRevertString" << endl;
     testReverseString();*/
 
-    cout << "testTwoSum" << endl;
-    testTwoSum();
+    /*cout << "testTwoSum" << endl;
+    testTwoSum();*/
+
+    cout << "testValidParentheses" << endl;
+    testValidParentheses();
     
     system("pause");
     return 0;
