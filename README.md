@@ -45,6 +45,9 @@ Solution: Use map to compare each element of the array to the target.
 
 ##  20. Valid Parentheses
 
+Requirement: Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+Solution: Push the characters into the stack, then use top to match the next character, if it matches, then pop the character and move on to the next group.
 
 
 ![black_seal](https://github.com/weitsunglin/leetcode/blob/main/black_seal.png)
