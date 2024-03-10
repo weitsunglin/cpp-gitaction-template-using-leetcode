@@ -83,7 +83,7 @@ void testValidParentheses() {
     string testCase = "()[]{}";
 
     Solution solution;
-    bool result = solution.removElement(testCase);
+    bool result = solution.validparentheses(testCase);
 
     cout << "testValidParentheses" << result << endl;
 }
