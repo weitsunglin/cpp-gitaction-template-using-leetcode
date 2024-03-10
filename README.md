@@ -42,6 +42,11 @@ Requirement: Given an array of integers nums and an integer target, return indic
 
 Solution: Use map to compare each element of the array to the target.
 
+
+##  20. Valid Parentheses
+
+
+
 ![black_seal](https://github.com/weitsunglin/leetcode/blob/main/black_seal.png)
 
 
