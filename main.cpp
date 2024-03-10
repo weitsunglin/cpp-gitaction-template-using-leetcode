@@ -85,7 +85,7 @@ void testValidParentheses() {
     Solution solution;
     bool result = solution.validparentheses(testCase);
 
-    cout << "testValidParentheses" << result << endl;
+    cout << "testValidParentheses result " << result << endl;
 }
 
 int main() {
