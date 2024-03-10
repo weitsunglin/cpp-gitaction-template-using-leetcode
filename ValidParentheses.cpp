@@ -1,6 +1,6 @@
 #include "Solution.h"
 
-bool Solution::isValid(string s) {
+bool Solution::validparentheses(string s) {
     stack<char> st;
     for (char c : s) {
         if (c == '(' || c == '{' || c == '[') {
