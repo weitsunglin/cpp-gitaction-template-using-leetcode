@@ -1,6 +1,7 @@
 #ifndef SOLUTION_H
 #define SOLUTION_H
 #include <vector>
+#include <string>
 #include "Define.h"
 
 using namespace std;
@@ -13,6 +14,7 @@ class Solution {
         int removeDuplicatesSortedArray(vector<int>& nums);
         void reverseString(vector<char>& s);
         vector<int> twoSum(vector<int>& nums, int target);
+        bool validparentheses(string s);
 };
 
 #endif
