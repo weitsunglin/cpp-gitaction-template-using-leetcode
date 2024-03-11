@@ -49,6 +49,11 @@ Requirement: Given a string s containing just the characters '(', ')', '{', '}',
 
 Solution: Push the characters into the stack, then use top to match the next character, if it matches, then pop the character and move on to the next group.
 
+## 121. Best Time to Buy and Sell Stock
+
+Requirement: 
+
+Solution: 
 
 ![black_seal](https://github.com/weitsunglin/leetcode/blob/main/black_seal.png)
 
