@@ -4,7 +4,7 @@
 #include <algorithm> // For std::max
 using namespace std;
 
-int Solution::BestTimetoBuyandSellStock(std::vector<int>& prices) {
+int Solution::bestTimetoBuyandSellStock(std::vector<int>& prices) {
     int minPrice = INT_MAX;
     int maxProfit = 0;
     for (int price : prices) {
