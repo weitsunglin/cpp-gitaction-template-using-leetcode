@@ -92,7 +92,7 @@ void testBestTimetoBuyandSellStock() {
     vector<int> stockPrices = {7,1,5,3,6,4};
 
     Solution solution;
-    int result = solution.BestTimetoBuyandSellStock(testCase);
+    int result = solution.BestTimetoBuyandSellStock(stockPrices);
 
     cout << "testBestTimetoBuyandSellStock result " << result << endl;
 }
