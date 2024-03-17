@@ -53,7 +53,7 @@ Solution: Push the characters into the stack, then use top to match the next cha
 
 Requirement: You are given an array prices where prices[i] is the price of a given stock on the ith day. You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock. Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
 
-Solution: 
+Solution: Record two values: minimum price and maximum profit. Use the loop to visit each day's price, find the lowest price first, then use the current price and the lowest price to calculate the maximum profit.
 
 ![black_seal](https://github.com/weitsunglin/leetcode/blob/main/black_seal.png)
 
