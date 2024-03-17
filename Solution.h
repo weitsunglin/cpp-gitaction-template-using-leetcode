@@ -15,7 +15,7 @@ class Solution {
         void reverseString(vector<char>& s);
         vector<int> twoSum(vector<int>& nums, int target);
         bool validparentheses(string s);
-        int BestTimetoBuyandSellStock(vector<int>& prices);
+        int bestTimetoBuyandSellStock(vector<int>& prices);
 };
 
 #endif
