@@ -88,6 +88,15 @@ void testValidParentheses() {
     cout << "testValidParentheses result " << result << endl;
 }
 
+void testBestTimetoBuyandSellStock() {
+    vector<int> stockPrices = {7,1,5,3,6,4};
+
+    Solution solution;
+    int result = solution.BestTimetoBuyandSellStock(testCase);
+
+    cout << "testBestTimetoBuyandSellStock result " << result << endl;
+}
+
 int main() {
     /*cout << "testRemoveElement" << endl;
     testRemoveElement();*/
@@ -107,8 +116,11 @@ int main() {
     /*cout << "testTwoSum" << endl;
     testTwoSum();*/
 
-    cout << "testValidParentheses" << endl;
-    testValidParentheses();
+   /* cout << "testValidParentheses" << endl;
+    testValidParentheses();*/
+
+    cout << "testBestTimetoBuyandSellStock" << endl;
+    testBestTimetoBuyandSellStock();
     
     system("pause");
     return 0;
