@@ -21,11 +21,30 @@ jobs:
       env:
         BUILD_TYPE: ${{  github.ref == 'refs/heads/main' && 'Release' || 'Debug' }}
       run: |
-          if ($env:BUILD_TYPE -eq "Debug") {
-            cl /EHsc /Zi /Fe:leetcode_build_debug.exe main.cpp CommonFunction.cpp RemovElement.cpp RemoveDuplicatesSortedArray.cpp RemoveLinkedListElement.cpp ReverseString.cpp SingleNumber.cpp ValidParentheses.cpp
-          } else {
-            cl /EHsc /O2 /DNDEBUG /Fe:leetcode_build_release.exe main.cpp TwoSum.cpp CommonFunction.cpp RemovElement.cpp RemoveDuplicatesSortedArray.cpp RemoveLinkedListElement.cpp ReverseString.cpp SingleNumber.cpp ValidParentheses.cpp
-          }
+        if ($env:BUILD_TYPE -eq "Debug") {
+          cl /EHsc /Zi /Fe:leetcode_build_debug.exe `
+             main.cpp `
+             CommonFunction.cpp `
+             RemovElement.cpp `
+             RemoveDuplicatesSortedArray.cpp `
+             RemoveLinkedListElement.cpp `
+             ReverseString.cpp `
+             SingleNumber.cpp `
+             ValidParentheses.cpp `
+             BestTimetoBuyandSellStock.cpp
+        } else {
+          cl /EHsc /O2 /DNDEBUG /Fe:leetcode_build_release.exe `
+             main.cpp `
+             TwoSum.cpp `
+             CommonFunction.cpp `
+             RemovElement.cpp `
+             RemoveDuplicatesSortedArray.cpp `
+             RemoveLinkedListElement.cpp `
+             ReverseString.cpp `
+             SingleNumber.cpp `
+             ValidParentheses.cpp `
+             BestTimetoBuyandSellStock.cpp
+        }
           
     - name: Run Executable
       env:
