@@ -55,6 +55,14 @@ Requirement: You are given an array prices where prices[i] is the price of a giv
 
 Solution: Record two values: minimum price and maximum profit. Use the loop to visit each day's price, find the lowest price first, then use the current price and the lowest price to calculate the maximum profit.
 
+## 121. Best Time to Buy and Sell Stock
+
+## 169. Majority Element
+
+Requirement: Given an array nums of size n, return the majority element. The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+
+Solution:
+
 ![black_seal](https://github.com/weitsunglin/leetcode/blob/main/black_seal.png)
 
 
