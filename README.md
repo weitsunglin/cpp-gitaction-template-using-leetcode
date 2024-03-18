@@ -55,7 +55,6 @@ Requirement: You are given an array prices where prices[i] is the price of a giv
 
 Solution: Record two values: minimum price and maximum profit. Use the loop to visit each day's price, find the lowest price first, then use the current price and the lowest price to calculate the maximum profit.
 
-## 121. Best Time to Buy and Sell Stock
 
 ## 169. Majority Element
 
