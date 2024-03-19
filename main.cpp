@@ -97,6 +97,15 @@ void testBestTimetoBuyandSellStock() {
     cout << "testBestTimetoBuyandSellStock result " << result << endl;
 }
 
+void testMajorityElement() {
+    vector<int> numbers = {2,2,1,1,1,2,2};
+
+    Solution solution;
+    int major_element = solution.majorityElement(numbers);
+
+    cout << "testMajorityElement" << major_element << endl;
+}
+
 int main() {
     /*cout << "testRemoveElement" << endl;
     testRemoveElement();*/
