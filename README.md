@@ -62,6 +62,12 @@ Requirement: Given an array nums of size n, return the majority element. The maj
 
 Solution: Declaration two variables, one for the candidate and one for the candidate's counts, using a looping visit array, when visiting an element, when the number of counts of the element is 0, the visited element will be turned into a candidate, and then if the visited element is equal to the candidate, the counts of the element will be +1, and vice versa, -1.
 
+
+## 58. Length of Last Word
+
+Requirement:
+Solution:
+
 ![black_seal](https://github.com/weitsunglin/leetcode/blob/main/black_seal.png)
 
 
