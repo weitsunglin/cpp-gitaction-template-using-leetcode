@@ -16,6 +16,7 @@ class Solution {
         vector<int> twoSum(vector<int>& nums, int target);
         bool validparentheses(string s);
         int bestTimetoBuyandSellStock(vector<int>& prices);
+        int majorityElement(vector<int>& nums);
 };
 
 #endif
