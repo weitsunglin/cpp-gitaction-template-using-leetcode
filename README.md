@@ -60,7 +60,7 @@ Solution: Record two values: minimum price and maximum profit. Use the loop to v
 
 Requirement: Given an array nums of size n, return the majority element. The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
 
-Solution:
+Solution: Declaration two variables, one for the candidate and one for the candidate's counts, using a looping visit array, when visiting an element, when the number of counts of the element is 0, the visited element will be turned into a candidate, and then if the visited element is equal to the candidate, the counts of the element will be +1, and vice versa, -1.
 
 ![black_seal](https://github.com/weitsunglin/leetcode/blob/main/black_seal.png)
 
