@@ -31,7 +31,8 @@ jobs:
              ReverseString.cpp `
              SingleNumber.cpp `
              ValidParentheses.cpp `
-             BestTimetoBuyandSellStock.cpp
+             BestTimetoBuyandSellStock.cpp`
+             MajorityElement.cpp
         } else {
           cl /EHsc /O2 /DNDEBUG /Fe:leetcode_build_release.exe `
              main.cpp `
@@ -43,7 +44,8 @@ jobs:
              ReverseString.cpp `
              SingleNumber.cpp `
              ValidParentheses.cpp `
-             BestTimetoBuyandSellStock.cpp
+             BestTimetoBuyandSellStock.cpp`
+             MajorityElement.cpp
         }
           
     - name: Run Executable
