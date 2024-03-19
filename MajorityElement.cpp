@@ -1,6 +1,6 @@
 #include "Solution.h"
 
-int Solution:: majorityElement(vector<int>& nums) {
+int Solution::majorityElement(vector<int>& nums) {
     int count = 0;
     int candidate = 0;
 
