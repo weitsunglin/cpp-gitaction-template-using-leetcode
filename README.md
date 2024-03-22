@@ -65,8 +65,9 @@ Solution: Declaration two variables, one for the candidate and one for the candi
 
 ## 58. Length of Last Word
 
-Requirement:
-Solution:
+Requirement: Given a string s consisting of words and spaces, return the length of the last word in the string.
+
+Solution: It's simple, find it from the back, use the string with the index to find it, if the found character is not equal to the blank, count +1
 
 ![black_seal](https://github.com/weitsunglin/leetcode/blob/main/black_seal.png)
 
