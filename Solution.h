@@ -17,6 +17,7 @@ class Solution {
         bool validparentheses(string s);
         int bestTimetoBuyandSellStock(vector<int>& prices);
         int majorityElement(vector<int>& nums);
+        int lengthOfLastWord(string s);
 };
 
 #endif
