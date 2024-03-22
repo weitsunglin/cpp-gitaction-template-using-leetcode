@@ -116,29 +116,16 @@ void testlengthOfLastWord() {
 }
 
 int main() {
-    /*cout << "testRemoveElement" << endl;
-    testRemoveElement();*/
 
-    /*cout << "testSingleNumber" << endl;
-    testSingleNumber();*/
-
-    /*cout << "testRemoveLinkedListElement" << endl;
-    testRemoveLinkedListElement(); */
-
-    /*cout << "testRemoveDuplicatesSortedArray" << endl;
-    testRemoveDuplicatesSortedArray();*/
-
-   /*cout << "testRevertString" << endl;
-    testReverseString();*/
-
-    /*cout << "testTwoSum" << endl;
-    testTwoSum();*/
-
-   /* cout << "testValidParentheses" << endl;
-    testValidParentheses();*/
-
-    cout << "testBestTimetoBuyandSellStock" << endl;
-    testBestTimetoBuyandSellStock();
+    /*estRemoveElement();
+    testSingleNumber();
+    testRemoveLinkedListElement(); 
+    testRemoveDuplicatesSortedArray();
+    testReverseString();
+    testTwoSum();
+    testValidParentheses();
+    testBestTimetoBuyandSellStock();*/
+    testlengthOfLastWord();
     
     system("pause");
     return 0;
