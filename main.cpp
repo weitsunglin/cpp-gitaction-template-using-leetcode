@@ -106,6 +106,15 @@ void testMajorityElement() {
     cout << "testMajorityElement" << major_element << endl;
 }
 
+void testlengthOfLastWord() {
+   
+    string worlds = " Little Seal gives the Green Onion Soldier a serious beating.";
+    Solution solution;
+    int last_word_length = solution.lengthOfLastWord(worlds);
+
+    cout << "testlengthOfLastWord" << last_word_length << endl;
+}
+
 int main() {
     /*cout << "testRemoveElement" << endl;
     testRemoveElement();*/
