@@ -69,6 +69,12 @@ Requirement: Given a string s consisting of words and spaces, return the length 
 
 Solution: It's simple, find it from the back, use the string with the index to find it, if the found character is not equal to the blank, count +1
 
+206. Reverse Linked List
+
+Requirement: Given the head of a singly linked list, reverse the list, and return the reversed list.
+
+Solution: 
+
 ![black_seal](https://github.com/weitsunglin/leetcode/blob/main/black_seal.png)
 
 
