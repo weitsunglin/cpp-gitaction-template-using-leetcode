@@ -75,7 +75,4 @@ Requirement: Given the head of a singly linked list, reverse the list, and retur
 
 Solution: Use two pointers to invert from the beginning and return the reversed Head
 
-![black_seal](https://github.com/weitsunglin/leetcode/blob/main/black_seal.png)
-
-
 © 2024 weitusnglin. All rights reserved.
