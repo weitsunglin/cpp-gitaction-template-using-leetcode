@@ -18,6 +18,7 @@ class Solution {
         int bestTimetoBuyandSellStock(vector<int>& prices);
         int majorityElement(vector<int>& nums);
         int lengthOfLastWord(string s);
+        ListNode* reverseLinkedList(ListNode* head);
 };
 
 #endif
