@@ -33,7 +33,8 @@ jobs:
              ValidParentheses.cpp `
              BestTimetoBuyandSellStock.cpp `
              MajorityElement.cpp `
-             LengthOfLastWord.cpp
+             LengthOfLastWord.cpp `
+             ReverseLinkedList.cpp
         } else {
           cl /EHsc /O2 /DNDEBUG /Fe:leetcode_build_release.exe `
              main.cpp `
@@ -47,7 +48,8 @@ jobs:
              ValidParentheses.cpp `
              BestTimetoBuyandSellStock.cpp `
              MajorityElement.cpp `
-            LengthOfLastWord.cpp
+             LengthOfLastWord.cpp `
+             ReverseLinkedList.cpp
         }
           
     - name: Run Executable
