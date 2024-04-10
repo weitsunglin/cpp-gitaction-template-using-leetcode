@@ -1,6 +1,6 @@
 #include "Solution.h"
 
-ListNode* Solution::reverseList(ListNode* head) {
+ListNode* Solution::reverseLinkedList(ListNode* head) {
     ListNode* prev = nullptr; 
     ListNode* current = head;
     while (current != nullptr) {
