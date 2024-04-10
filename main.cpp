@@ -115,6 +115,23 @@ void testlengthOfLastWord() {
     cout << "testlengthOfLastWord" << last_word_length << endl;
 }
 
+void testReverseLinkedList() {
+    Solution solution;
+
+    // 1 → 2 → 6 → 3 → 4 → 5 → 6 → nullptr
+    ListNode* head = new ListNode(1, new ListNode(2, new ListNode(6, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6)))))));
+
+    cout << "Original List: "<<endl;
+    CommonFunction commonfunction;
+    commonfunction.printLinkedList(head);
+
+    head = solution.reverseLinkedList(head);
+
+    cout << "Modified List: "<<endl;
+    commonfunction.printLinkedList(head);
+}
+
+
 int main() {
 
     /*estRemoveElement();
@@ -124,8 +141,9 @@ int main() {
     testReverseString();
     testTwoSum();
     testValidParentheses();
-    testBestTimetoBuyandSellStock();*/
-    testlengthOfLastWord();
+    testBestTimetoBuyandSellStock();
+    testlengthOfLastWord();*/
+    testReverseLinkedList();
     
     system("pause");
     return 0;
