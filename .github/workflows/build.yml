@@ -67,14 +67,3 @@ jobs:
       with:
         name: leetcode-executable-${{ env.BUILD_TYPE }}
         path: leetcode_build*.exe
-
-  trigger-print-job:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Trigger a repository_dispatch event
-        uses: peter-evans/repository-dispatch@v1
-        with:
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          repository: weitsunglin/leetcode
-          event-type: 'print-message-event'
