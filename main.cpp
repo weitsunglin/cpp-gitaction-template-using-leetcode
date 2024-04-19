@@ -142,7 +142,6 @@ void testSearchInsert() {
 
 
 int main() {
-
     /*estRemoveElement();
     testSingleNumber();
     testRemoveLinkedListElement(); 
@@ -152,7 +151,7 @@ int main() {
     testValidParentheses();
     testBestTimetoBuyandSellStock();
     testlengthOfLastWord();*/
-    testReverseLinkedList();
+    testSearchInsert();
     
     system("pause");
     return 0;
