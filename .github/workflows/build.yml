@@ -34,7 +34,8 @@ jobs:
              BestTimetoBuyandSellStock.cpp `
              MajorityElement.cpp `
              LengthOfLastWord.cpp `
-             ReverseLinkedList.cpp
+             ReverseLinkedList.cpp `
+             searchInsert.cpp
         } else {
           cl /EHsc /O2 /DNDEBUG /Fe:leetcode_build_release.exe `
              main.cpp `
@@ -49,7 +50,8 @@ jobs:
              BestTimetoBuyandSellStock.cpp `
              MajorityElement.cpp `
              LengthOfLastWord.cpp `
-             ReverseLinkedList.cpp
+             ReverseLinkedList.cpp `
+             searchInsert.cpp
         }
           
     - name: Run Executable
