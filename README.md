@@ -75,4 +75,10 @@ Requirement: Given the head of a singly linked list, reverse the list, and retur
 
 Solution: Use two pointers to invert from the beginning and return the reversed Head
 
+## 35. search insert position
+
+Requirement: Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+
+Solution: 這個算法通過二分搜尋法查找或確定插入點，減少搜索範圍並精確定位，效率為O(logn)。在這個二分搜索演算法中，最後返回的是 low 索引，這個索引指向了目標值 target 應插入的位置，無論 target 是否已經存在於數組中。
+
 © 2024 weitusnglin. All rights reserved.
