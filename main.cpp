@@ -131,6 +131,15 @@ void testReverseLinkedList() {
     commonfunction.printLinkedList(head);
 }
 
+void testSearchInsert() {
+    vector<int> numbers = {1,3,5,6};
+
+    Solution solution;
+    int index = solution.searchInsert(numbers,5);
+
+    cout << "testSearchInsert" << index << endl;
+}
+
 
 int main() {
 
