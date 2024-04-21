@@ -1,5 +1,3 @@
-#include <iostream>
-
 #include "CommonFunction.h"
 
 using namespace std;
