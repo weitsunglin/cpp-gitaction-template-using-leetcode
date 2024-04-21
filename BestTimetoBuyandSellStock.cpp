@@ -1,15 +1,14 @@
 
 #include "Solution.h"
-#include <vector>
-#include <algorithm> // For std::max
+
 using namespace std;
 
-int Solution::bestTimetoBuyandSellStock(std::vector<int>& prices) {
+int Solution::bestTimetoBuyandSellStock(vector<int>& prices) {
     int minPrice = INT_MAX;
     int maxProfit = 0;
     for (int price : prices) {
-        minPrice = std::min(minPrice, price);
-        maxProfit = std::max(maxProfit, price - minPrice);
+        minPrice = min(minPrice, price);
+        maxProfit = max(maxProfit, price - minPrice);
     }
     return maxProfit;
 }
