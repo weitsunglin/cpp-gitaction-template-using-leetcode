@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <string>
+#include <stack>
 
 #include "Define.h"
 
