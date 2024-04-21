@@ -1,6 +1,6 @@
 #include "Solution.h"
-
-int Solution::removElement(std::vector<int>& nums, int val) {
+using namespace std;
+int Solution::removElement(vector<int>& nums, int val) {
     int k = 0;
     for (int i = 0; i < nums.size(); ++i) {
         if (nums[i] != val) {
