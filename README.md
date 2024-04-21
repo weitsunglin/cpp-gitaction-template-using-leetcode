@@ -81,4 +81,10 @@ Requirement: Given a sorted array of distinct integers and a target value, retur
 
 Solution: 這個算法通過二分搜尋法查找或確定插入點，減少搜索範圍並精確定位，效率為O(logn)。在這個二分搜索演算法中，最後返回的是 low 索引，這個索引指向了目標值 target 應插入的位置，無論 target 是否已經存在於數組中。
 
+## 28. Find the index of the First Occurrence in a String
+
+Requirement:Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+
+Solution:
+
 © 2024 weitusnglin. All rights reserved.
