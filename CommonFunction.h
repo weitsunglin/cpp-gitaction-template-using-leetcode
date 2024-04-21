@@ -1,5 +1,6 @@
 #ifndef COMMON_FUNCTION_H
 #define COMMON_FUNCTION_H
+#include "library.h"
 using namespace std;
 
 class CommonFunction {
