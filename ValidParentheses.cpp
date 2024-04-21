@@ -1,5 +1,5 @@
 #include "Solution.h"
-#include <stack>
+
 using namespace std;
 bool Solution::validparentheses(string s) {
     stack<char> st;
