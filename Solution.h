@@ -1,6 +1,6 @@
 #ifndef SOLUTION_H
 #define SOLUTION_H
-
+#include "library.h"
 using namespace std;
 
 class Solution {
