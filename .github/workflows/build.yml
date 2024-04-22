@@ -71,7 +71,7 @@ jobs:
 
     - name: Generate Documentation
       run: |
-        "C:\Program Files\doxygen\bin\doxygen.exe" Doxyfile
+        & "C:\Program Files\doxygen\bin\doxygen.exe" Doxyfile
 
     - name: Upload Documentation
       uses: actions/upload-artifact@v2
