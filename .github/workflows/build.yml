@@ -70,7 +70,8 @@ jobs:
         echo "C:\ProgramData\chocolatey\lib\doxygen.install\tools" | Out-File -Append -FilePath $env:GITHUB_PATH -Encoding utf8
 
     - name: Generate Documentation
-      run: doxygen Doxyfile
+      run: |
+        "C:\Program Files\doxygen\bin\doxygen.exe" Doxyfile
 
     - name: Upload Documentation
       uses: actions/upload-artifact@v2
