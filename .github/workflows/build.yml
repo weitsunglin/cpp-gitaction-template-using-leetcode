@@ -67,7 +67,9 @@ jobs:
     - name: Install Doxygen and Graphviz
       run: |
         choco install doxygen.install graphviz
-        echo "C:\ProgramData\chocolatey\lib\doxygen.install\tools" | Out-File -Append -FilePath $env:GITHUB_PATH -Encoding utf8
+
+    - name: List files in the directory
+      run: ls
 
     - name: Generate Documentation
       run: |
