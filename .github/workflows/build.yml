@@ -70,16 +70,6 @@ jobs:
     - name: List files in the directory
       run: ls
 
-    - name: Generate Documentation
-      run: |
-        & "C:\Program Files\doxygen\bin\doxygen.exe" Doxyfile
-
-    - name: Upload Documentation
-      uses: actions/upload-artifact@v2
-      with:
-        name: documentation
-        path: docs/  # Doxygen 生成的文档默认存放目录
-
     - name: Artifact Upload
       uses: actions/upload-artifact@v2
       with:
