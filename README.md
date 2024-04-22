@@ -85,6 +85,6 @@ Solution: 這個算法通過二分搜尋法查找或確定插入點，減少搜�
 
 Requirement:Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
 
-Solution:
+Solution: 獲取haystack及needle長度，並使用needle去匹配haystack字串，匹配的次數用haystack扣除needle，這樣needle匹配就不會超過haystack。
 
 © 2024 weitusnglin. All rights reserved.
