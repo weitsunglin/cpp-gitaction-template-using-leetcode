@@ -65,8 +65,7 @@ jobs:
         }
 
     - name: Install Doxygen and Graphviz
-      run: |
-        choco install doxygen.install graphviz
+      run: choco install doxygen.install
 
     - name: List files in the directory
       run: ls
