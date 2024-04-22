@@ -64,9 +64,6 @@ jobs:
           ./leetcode_build_release.exe
         }
 
-    - name: Install Doxygen and Graphviz
-      run: choco install doxygen.install
-
     - name: List files in the directory
       run: ls
 
