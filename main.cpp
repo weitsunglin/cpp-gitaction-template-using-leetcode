@@ -2,17 +2,7 @@
 #include "test.h"
 
 int main() {    
-    /*testRemoveElement();
-    testSingleNumber();
-    testRemoveLinkedListElement(); 
-    testRemoveDuplicatesSortedArray();
-    testReverseString();
-    testTwoSum();
-    testValidParentheses();
-    testBestTimetoBuyandSellStock();
-    testlengthOfLastWord();*/
-    testSearchInsert();
-    
+    tester();   
     system("pause");
     return 0;
 }
