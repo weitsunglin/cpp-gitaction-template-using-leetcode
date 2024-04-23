@@ -83,8 +83,14 @@ Solution: 使用二分搜尋法查找target，如果都沒找到，最後返回�
 
 ## 28. Find the index of the First Occurrence in a String
 
-Requirement:Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+Requirement: Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
 
 Solution: 獲取haystack及needle長度，並使用needle去匹配haystack字串，匹配的次數用haystack扣除needle，這樣needle匹配就不會超過haystack。
+
+## 171. Excel sheet colume Number
+
+Requirement: Given a string columnTitle that represents the column title as appears in an Excel sheet, return its corresponding column number.
+
+Solution: 由左到右處理字串，26進制的概念，例如 "AB" 就是0X26+1 + 1X26+1 = 28。
 
 © 2024 weitusnglin. All rights reserved.
