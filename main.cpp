@@ -2,7 +2,8 @@
 #include "test.h"
 
 int main() {
-     std::cout << "C++ 版本：" << __VERSION__ << std::endl;
+    std::string version_string = std::version();
+    std::cout << "C++ 標準庫版本：" << version_string << std::endl;
     
     /*testRemoveElement();
     testSingleNumber();
