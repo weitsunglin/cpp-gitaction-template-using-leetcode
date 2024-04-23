@@ -17,6 +17,7 @@ class Solution {
         int lengthOfLastWord(string s);
         ListNode* reverseLinkedList(ListNode* head);
         int searchInsert(vector<int>& nums, int target);
+        int ExcelSheetColumeNumber(string columnTitle);
 };
 
 #endif
