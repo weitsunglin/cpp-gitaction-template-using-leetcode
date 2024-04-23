@@ -139,3 +139,25 @@ void testSearchInsert() {
 
     cout << "testSearchInsert" << index << endl;
 }
+
+void testExcelSheetColumeNumber() {
+    string columnTitle = "AB"    
+    Solution solution;
+    int result = solution.ExcelSheetColumeNumber(columnTitle);
+
+    cout << "testExcelSheetColumeNumber" << result << endl;
+}
+
+void tester(){
+    /*testRemoveElement();
+    testSingleNumber();
+    testRemoveLinkedListElement(); 
+    testRemoveDuplicatesSortedArray();
+    testReverseString();
+    testTwoSum();
+    testValidParentheses();
+    testBestTimetoBuyandSellStock();
+    testlengthOfLastWord();
+    testSearchInsert();*/
+    testExcelSheetColumeNumber();
+}
