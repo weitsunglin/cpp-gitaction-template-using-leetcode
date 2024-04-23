@@ -23,6 +23,7 @@ jobs:
       run: |
         if ($env:BUILD_TYPE -eq "Debug") {
           cl /EHsc /Zi /Fe:leetcode_build_debug.exe `
+             test.cpp ` 
              main.cpp `
              CommonFunction.cpp `
              RemovElement.cpp `
@@ -38,6 +39,7 @@ jobs:
              searchInsert.cpp
         } else {
           cl /EHsc /O2 /DNDEBUG /Fe:leetcode_build_release.exe `
+             test.cpp `
              main.cpp `
              TwoSum.cpp `
              CommonFunction.cpp `
