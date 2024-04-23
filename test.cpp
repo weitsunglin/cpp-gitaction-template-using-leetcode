@@ -141,7 +141,7 @@ void testSearchInsert() {
 }
 
 void testExcelSheetColumeNumber() {
-    string columnTitle = "AB"    
+    string columnTitle = "AB";   
     Solution solution;
     int result = solution.ExcelSheetColumeNumber(columnTitle);
 
