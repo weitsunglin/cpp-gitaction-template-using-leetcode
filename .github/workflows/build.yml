@@ -17,6 +17,22 @@ jobs:
     - name: Setup MSVC
       uses: ilammy/msvc-dev-cmd@v1.8.0
 
+     # 添加 Doxygen 安装步骤
+    - name: Install Doxygen
+      run: |
+        choco install doxygen
+
+    # 初始化 Doxyfile
+    - name: Create Doxyfile
+      run: |
+        doxygen -g
+
+    # 可选：修改 Doxyfile 配置
+    - name: Setup Doxyfile
+      run: |
+        sed -i 's/PROJECT_NAME           = "My Project"/PROJECT_NAME           = "LeetCode Solutions"/' Doxyfile
+        sed -i 's/OUTPUT_DIRECTORY       =/OUTPUT_DIRECTORY       = docs/' Doxyfile
+
     - name: Compile
       env:
         BUILD_TYPE: ${{  github.ref == 'refs/heads/main' && 'Release' || 'Debug' }}
@@ -66,11 +82,23 @@ jobs:
           ./leetcode_build_release.exe
         }
 
+    # 运行 Doxygen 来生成文档
+    - name: Generate Documentation
+      run: |
+        doxygen Doxyfile
+
     - name: List files in the directory
       run: ls
+
 
     - name: Artifact Upload
       uses: actions/upload-artifact@v2
       with:
         name: leetcode-executable-${{ env.BUILD_TYPE }}
         path: leetcode_build*.exe
+
+    - name: Upload Documentation
+      uses: actions/upload-artifact@v2
+      with:
+        name: Documentation
+        path: docs/
