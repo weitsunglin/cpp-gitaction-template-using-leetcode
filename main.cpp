@@ -1,10 +1,7 @@
 #include <iostream>
 #include "test.h"
 
-int main() {
-    std::string version_string = std::version();
-    std::cout << "C++ 標準庫版本：" << version_string << std::endl;
-    
+int main() {    
     /*testRemoveElement();
     testSingleNumber();
     testRemoveLinkedListElement(); 
