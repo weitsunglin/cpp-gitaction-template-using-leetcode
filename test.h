@@ -13,3 +13,4 @@ void testMajorityElement();
 void testLengthOfLastWord();
 void testReverseLinkedList();
 void testSearchInsert();
+void tester();
