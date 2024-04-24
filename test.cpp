@@ -135,7 +135,7 @@ void testSearchInsert() {
     vector<int> numbers = {1,3,5,6};
 
     Solution solution;
-    int index = solution.searchInsert(numbers,5);
+    int index = solution.searchInsertposition(numbers,5);
 
     cout << "testSearchInsert" << index << endl;
 }
