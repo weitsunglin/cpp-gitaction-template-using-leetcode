@@ -1,6 +1,6 @@
 #include "Solution.h"
 
-int Solution::searchInsert(vector<int>& nums, int target) {
+int Solution::searchInsertposition(vector<int>& nums, int target) {
     int low = 0;
     int high = nums.size() - 1;
 
