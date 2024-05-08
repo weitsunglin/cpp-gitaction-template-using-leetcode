@@ -117,4 +117,10 @@ Requirement: Given a string columnTitle that represents the column title as appe
 
 Solution: 由左到右處理字串，26進制的概念，例如 "AB" 就是0X26+1 + 1X26+1 = 28。
 
+##  14. Longest Common Prefix
+
+Learning Objective: 
+
+Requirement: 
+
 © 2024 weitusnglin. All rights reserved.
