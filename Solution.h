@@ -18,6 +18,7 @@ class Solution {
         ListNode* reverseLinkedList(ListNode* head);
         int searchInsertposition(vector<int>& nums, int target);
         int ExcelSheetColumeNumber(string columnTitle);
+        bool isSubsequence(string subsequence, string text);
 };
 
 #endif

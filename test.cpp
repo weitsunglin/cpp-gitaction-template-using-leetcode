@@ -148,16 +148,14 @@ void testExcelSheetColumeNumber() {
     cout << "testExcelSheetColumeNumber" << result << endl;
 }
 
+void testisSubsequence(){
+    string sub_seq = "afgresa";
+    string text = "ar";
+    Solution solution;
+    bool result = solution.isSubsequence(sub_seq,text);
+    cout << "testisSubsequence " << sub_seq << " and " << text << " isSubsequence " << result << endl;
+}
+
 void tester(){
-    /*testRemoveElement();
-    testSingleNumber();
-    testRemoveLinkedListElement(); 
-    testRemoveDuplicatesSortedArray();
-    testReverseString();
-    testTwoSum();
-    testValidParentheses();
-    testBestTimetoBuyandSellStock();
-    testlengthOfLastWord();
-    testSearchInsert();*/
-    testExcelSheetColumeNumber();
+    testisSubsequence();
 }

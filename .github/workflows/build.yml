@@ -37,7 +37,8 @@ jobs:
              LengthOfLastWord.cpp `
              ReverseLinkedList.cpp `
              searchInsertposition.cpp `
-             ExcelSheetColumeNumber.cpp
+             ExcelSheetColumeNumber.cpp `
+             isSubsequence.cpp
         } else {
           cl /EHsc /O2 /DNDEBUG /Fe:leetcode_build_release.exe `
              test.cpp `
@@ -55,7 +56,8 @@ jobs:
              LengthOfLastWord.cpp `
              ReverseLinkedList.cpp `
              searchInsertposition.cpp `
-             ExcelSheetColumeNumber.cpp
+             ExcelSheetColumeNumber.cpp `
+             isSubsequence.cpp
         }
 
     - name: Run Executable
