@@ -15,3 +15,4 @@ void testReverseLinkedList();
 void testSearchInsert();
 void tester();
 void testisSubsequence();
+void testClimbStairs();

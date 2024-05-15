@@ -19,6 +19,7 @@ class Solution {
         int searchInsertposition(vector<int>& nums, int target);
         int ExcelSheetColumeNumber(string columnTitle);
         bool isSubsequence(string subsequence, string text);
+        int climbStairs(int n);
 };
 
 #endif

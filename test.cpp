@@ -156,6 +156,12 @@ void testisSubsequence(){
     cout << "testisSubsequence " << sub_seq << " and " << text << " isSubsequence " << result << endl;
 }
 
+void testClimbStairs(){
+    Solution solution;
+    int result = solution.climbStairs(5);
+    cout << "testClimbStairs " << result << endl;
+}
+
 void tester(){
-    testisSubsequence();
+    testClimbStairs();
 }
