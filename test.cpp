@@ -149,8 +149,8 @@ void testExcelSheetColumeNumber() {
 }
 
 void testisSubsequence(){
-    string sub_seq = "afgresa";
-    string text = "ar";
+    string sub_seq = "ar";
+    string text = "afgresa";
     Solution solution;
     bool result = solution.isSubsequence(sub_seq,text);
     cout << "testisSubsequence " << sub_seq << " and " << text << " isSubsequence " << result << endl;
