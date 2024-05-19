@@ -162,6 +162,13 @@ void testClimbStairs(){
     cout << "testClimbStairs " << result << endl;
 }
 
+void testRansomNote(){
+    Solution solution;
+    bool canConstruct = solution.RansomNote("aa","aab");
+    cout << "testRansomNote " << canConstruct << endl;
+}
+
+
 void tester(){
-    testClimbStairs();
+    testRansomNote();
 }
