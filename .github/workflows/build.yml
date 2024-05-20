@@ -18,31 +18,7 @@ jobs:
       uses: ilammy/msvc-dev-cmd@v1.8.0
 
     - name: Compile
-      env:
-        BUILD_TYPE: ${{  github.ref == 'refs/heads/main' && 'Release' || 'Debug' }}
       run: |
-        if ($env:BUILD_TYPE -eq "Debug") {
-          cl /EHsc /Zi /Fe:leetcode_build_debug.exe `
-             test.cpp ` 
-             main.cpp `
-             CommonFunction.cpp `
-             RemovElement.cpp `
-             RemoveDuplicatesSortedArray.cpp `
-             RemoveLinkedListElement.cpp `
-             ReverseString.cpp `
-             SingleNumber.cpp `
-             ValidParentheses.cpp `
-             BestTimetoBuyandSellStock.cpp `
-             MajorityElement.cpp `
-             LengthOfLastWord.cpp `
-             ReverseLinkedList.cpp `
-             searchInsertposition.cpp `
-             ExcelSheetColumeNumber.cpp `
-             isSubsequence.cpp　`
-             climbStairs.cpp　`
-             RansomNote.cpp　`
-             IsomorphicString.cpp
-        } else {
           cl /EHsc /O2 /DNDEBUG /Fe:leetcode_build_release.exe `
              test.cpp `
              main.cpp `
@@ -64,17 +40,10 @@ jobs:
              climbStairs.cpp　`
              RansomNote.cpp　`
              IsomorphicString.cpp
-        }
 
     - name: Run Executable
-      env:
-        BUILD_TYPE: ${{ github.ref == 'refs/heads/main' && 'Release' || 'Debug' }}
       run: |
-        if ($env:BUILD_TYPE -eq "Debug") {
-          ./leetcode_build_debug.exe
-        } else {
-          ./leetcode_build_release.exe
-        }
+        ./leetcode_build_release.exe
 
     - name: List files in the directory
       run: ls
