@@ -168,7 +168,13 @@ void testRansomNote(){
     cout << "testRansomNote " << canConstruct << endl;
 }
 
+void testIsomorphicString(){
+    Solution solution;
+    bool canConstruct = solution.isIsomorphic("aa","aab");
+    cout << "testIsomorphicString " << canConstruct << endl;
+}
+
 
 void tester(){
-    testRansomNote();
+    testIsomorphicString();
 }

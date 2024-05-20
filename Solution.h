@@ -21,6 +21,7 @@ class Solution {
         bool isSubsequence(string subsequence, string text);
         int climbStairs(int n);
         bool RansomNote(string ransomNote, string magazine);
+        bool isIsomorphic(string s, string t);
 };
 
 #endif
