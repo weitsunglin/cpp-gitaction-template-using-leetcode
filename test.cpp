@@ -170,7 +170,7 @@ void testRansomNote(){
 
 void testIsomorphicString(){
     Solution solution;
-    bool canConstruct = solution.isIsomorphic("aa","aab");
+    bool canConstruct = solution.isIsomorphic("aab","aab");
     cout << "testIsomorphicString " << canConstruct << endl;
 }
 
