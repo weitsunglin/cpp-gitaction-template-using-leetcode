@@ -61,7 +61,7 @@ jobs:
              ExcelSheetColumeNumber.cpp `
              isSubsequence.cpp `
              climbStairs.cpp`
-            RansomNote.cpp
+             RansomNote.cpp
         }
 
     - name: Run Executable
