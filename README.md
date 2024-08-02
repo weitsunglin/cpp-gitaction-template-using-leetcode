@@ -1,120 +1,113 @@
-# leetcode
+# LeetCode
 
-## 27. Remove Element　
+## 27. Remove Element
 
-Learning Objective:Two-Pointer Technique
+**學習目標：** 雙指針技術
 
-Requirement: To remove specified elements from array.
+**需求：** 從數組中移除指定的元素。
 
-Solution: Directly find the value that is not equal to the element to be deleted, and reassign the value to the array, returning the new length of the array.
+**解決方案：** 直接找到不等於要刪除元素的值，並重新賦值給數組，返回數組的新長度。
 
 ## 136. Single Number
 
-Learning Objective: bitewise operation (XOR).
+**學習目標：** 位操作 (XOR)
 
-Requirement:　Given a non-empty array of integers nums, every element appears 「twice」 except for one. Find that single one.
+**需求：** 給定一個非空的整數數組 nums，每個元素出現「兩次」，除了有一個只出現一次。找出那個只出現一次的數字。
 
-Solution: Use ^= (XOR) and a loop to find the number that is only once used, because A ⊕ 0=A & A ⊕ A=0
+**解決方案：** 使用 ^= (XOR) 和一個循環來找到只出現一次的數字，因為 A ⊕ 0 = A 且 A ⊕ A = 0。
 
 ## 203. Remove Linked List Elements
 
-Learning Objective: Linked List Traversal and Modification
+**學習目標：** 鏈表遍歷和修改
 
-Requirement: Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head.
+**需求：** 給定一個鏈表的頭節點和一個整數 val，移除所有節點值等於 val 的節點，並返回新的頭節點。
 
-Solution: The first element and the second element are not processed in the same way, but both are first stored as temp, then point the head to next, and finally delete the temp.
+**解決方案：** 第一個元素和第二個元素不以相同的方式處理，但都先存儲為 temp，然後將頭節點指向下一個節點，最後刪除 temp。
 
-  
 ## 26. Remove Duplicates from Sorted Array
 
-Learning Objective: In-place Array Manipulation
+**學習目標：** 原地數組操作
 
-Requirement: Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. 
-  The relative order of the elements should be kept the same. Then return the number of unique elements in nums.
+**需求：** 給定一個按非遞減順序排序的整數數組 nums，原地刪除重複項，使每個唯一元素只出現一次。元素的相對順序應保持不變。然後返回 nums 中唯一元素的個數。
 
-Solution: Use k as index to find, since the first element is always unique, find from the second element, if the current element is different from the previous one, move the current element to the k position, and finally return k (the length of the non-duplicated element)
+**解決方案：** 使用 k 作為索引查找，由於第一個元素總是唯一的，從第二個元素開始查找，如果當前元素與前一個元素不同，則將當前元素移動到 k 位置，最後返回 k（不重複元素的長度）。
 
-## 344. Reverse String 
+## 344. Reverse String
 
-Learning Objective: Two-Pointer Technique
+**學習目標：** 雙指針技術
 
-Requirement: Write a function that takes a string as input and returns the string reversed
+**需求：** 編寫一個函數，接收一個字符串作為輸入並返回反轉後的字符串。
 
-Solution:　Use two indexes, one at the front and one at the back, both going to the center and exchanging with each other as they go.
+**解決方案：** 使用兩個索引，一個在前，一個在後，雙向向中心移動，並在移動過程中互相交換。
 
-##  1. Two Sum
+## 1. Two Sum
 
-Learning Objective: Hash Mapping
+**學習目標：** 哈希映射
 
-Requirement: Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+**需求：** 給定一個整數數組 nums 和一個整數目標值 target，返回兩個數的索引，使它們的和等於目標值 target。
 
-Solution: Use map to compare each element of the array to the target.
+**解決方案：** 使用映射來比較數組中的每個元素與目標值。
 
+## 20. Valid Parentheses
 
-##  20. Valid Parentheses
+**學習目標：** 棧的使用
 
-Learning Objective: Stack Usage
+**需求：** 給定一個只包含字符 '(', ')', '{', '}', '[' 和 ']' 的字符串 s，判斷輸入字符串是否有效。
 
-Requirement: Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
-
-Solution: Push the characters into the stack, then use top to match the next character, if it matches, then pop the character and move on to the next group.
+**解決方案：** 將字符推入棧中，然後使用棧頂與下一個字符匹配，如果匹配，則彈出字符並繼續下一組匹配。
 
 ## 121. Best Time to Buy and Sell Stock
 
-Learning Objective: Dynamic Programming
+**學習目標：** 動態規劃
 
-Requirement: You are given an array prices where prices[i] is the price of a given stock on the ith day. You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock. Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+**需求：** 給定一個數組 prices，其中 prices[i] 是某只股票在第 i 天的價格。你想要通過選擇某一天買入一只股票並選擇不同的一天賣出來最大化你的利潤。返回你可以從這筆交易中獲得的最大利潤。如果不能獲得任何利潤，返回 0。
 
-Solution: Record two values: minimum price and maximum profit. Use the loop to visit each day's price, find the lowest price first, then use the current price and the lowest price to calculate the maximum profit.
-
+**解決方案：** 記錄兩個值：最低價格和最大利潤。使用循環訪問每一天的價格，先找到最低價格，然後使用當前價格和最低價格來計算最大利潤。
 
 ## 169. Majority Element
 
-Learning Objective: Voting Algorithm
+**學習目標：** 投票算法
 
-Requirement: Given an array nums of size n, return the majority element. The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+**需求：** 給定大小為 n 的數組 nums，返回多數元素。多數元素是指在數組中出現次數多於 ⌊n / 2⌋ 的元素。你可以假設數組是非空的，並且多數元素總是存在。
 
-Solution: Declaration two variables, one for the candidate and one for the candidate's counts, using a looping visit array, when visiting an element, when the number of counts of the element is 0, the visited element will be turned into a candidate, and then if the visited element is equal to the candidate, the counts of the element will be +1, and vice versa, -1.
-
+**解決方案：** 聲明兩個變量，一個用於候選人，另一個用於候選人的計數，使用循環訪問數組，當訪問一個元素時，當元素的計數為 0 時，訪問的元素將變成候選人，然後如果訪問的元素等於候選人，元素的計數 +1，否則 -1。
 
 ## 58. Length of Last Word
 
-Learning Objective: String Manipulation
+**學習目標：** 字符串操作
 
-Requirement: Given a string s consisting of words and spaces, return the length of the last word in the string.
+**需求：** 給定一個由單詞和空格組成的字符串 s，返回字符串中最後一個單詞的長度。
 
-Solution: It's simple, find it from the back, use the string with the index to find it, if the found character is not equal to the blank, count +1
+**解決方案：** 很簡單，從後面找，使用字符串的索引來查找，如果找到的字符不等於空格，計數 +1。
 
 ## 206. Reverse Linked List
 
-Learning Objective: Pointer Manipulation
+**學習目標：** 指針操作
 
-Requirement: Given the head of a singly linked list, reverse the list, and return the reversed list.
+**需求：** 給定單鏈表的頭節點，反轉鏈表，並返回反轉後的鏈表。
 
-Solution: Use two pointers to invert from the beginning and return the reversed Head
+**解決方案：** 使用兩個指針從頭開始反轉並返回反轉後的頭節點。
 
-## 35. search insert position
+## 35. Search Insert Position
 
-Learning Objective: Binary Search
+**學習目標：** 二分查找
 
-Requirement: Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+**需求：** 給定一個排序的不同整數數組和一個目標值，返回目標值如果被找到的索引。如果沒找到，返回它應插入的位置的索引。
 
-Solution: 使用二分搜尋法查找target，如果都沒找到，最後返回的是 low 索引，這個索引指向了目標值 target 應插入的位置。
+**解決方案：** 使用二分搜尋法查找目標值，如果沒有找到，最後返回的是 low 索引，這個索引指向了目標值應插入的位置。
 
-## 28. Find the index of the First Occurrence in a String
+## 28. Find the Index of the First Occurrence in a String
 
-Learning Objective: Substring Search
+**學習目標：** 子字符串搜索
 
-Requirement: Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+**需求：** 給定兩個字符串 needle 和 haystack，返回 needle 在 haystack 中的第一個匹配項的索引，如果 needle 不是 haystack 的一部分，則返回 -1。
 
-Solution: 獲取haystack及needle長度，並使用needle去匹配haystack字串，匹配的次數用haystack扣除needle，這樣needle匹配就不會超過haystack。
+**解決方案：** 獲取 haystack 及 needle 的長度，並使用 needle 去匹配 haystack 子字符串，匹配的次數用 haystack 扣除 needle，這樣 needle 匹配就不會超過 haystack。
 
-## 171. Excel sheet colume Number
+## 171. Excel Sheet Column Number
 
-Learning Objective: Base Conversion
+**學習目標：** 進制轉換
 
-Requirement: Given a string columnTitle that represents the column title as appears in an Excel sheet, return its corresponding column number.
+**需求：** 給定表示 Excel 表格列標題的字符串 columnTitle，返回其對應的列號。
 
-Solution: 由左到右處理字串，26進制的概念，例如 "AB" 就是0X26+1 + 1X26+1 = 28。
-
-© 2024 weitusnglin. All rights reserved.
+**解決方案：** 從左到右處理字符串，使用 26 進制的概念，例如 "AB" 就是 0X26+1 + 1X26+1 = 28。
