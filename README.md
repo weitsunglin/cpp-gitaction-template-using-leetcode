@@ -111,3 +111,5 @@
 **需求：** 給定表示 Excel 表格列標題的字符串 columnTitle，返回其對應的列號。
 
 **解決方案：** 從左到右處理字符串，使用 26 進制的概念，例如 "AB" 就是 0X26+1 + 1X26+1 = 28。
+
+© 2024 weitusnglin. All rights reserved.
